@@ -1,5 +1,15 @@
-<input class="chatInput" 
-    [(ngModel)]="message" 
-    (keydown)="handleSubmit($event)"/>
 
-<button class="chatButton" (click)=send()>Send</button>
+<div class="input-group" id="chatForm">
+	<input type="text" 
+		class="form-control" 
+		id="chatInput" 
+		placeholder="Your message..." 
+		[(ngModel)]="message" 
+		(keydown)="handleSubmit($event)">
+
+	<div class="input-group-append">
+	  
+		<button class="btn btn-primary" (click)=send()>Send</button>
+	  
+	</div>
+</div>

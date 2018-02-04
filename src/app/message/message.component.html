@@ -1,14 +1,14 @@
-<div class="messageContainer">
-  <div class="messageData">
-    <span class="sender">
-      {{ userName }}
-    </span>
-    <span class="timestamp">
-      {{ timeSent | date:'medium'}}
-    </span>
-  </div>
-  <div>
-    {{ messageContent }}
-  </div>
+<div class="messageContainer" [class.ownMessage]="isOwnMessage">
+	<div class="messageData">
+		<span class="sender">
+			{{ userName }}
+		</span>
+		<span class="timestamp">
+			{{ timeSent | date:'medium'}}
+		</span>
+	</div>
+	<div>
+		{{ messageContent }}
+	</div>
 </div>
-<hr>
+<div class="clearfix"></div> 

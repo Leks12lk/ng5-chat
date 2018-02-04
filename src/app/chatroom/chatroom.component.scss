@@ -1,11 +1,26 @@
 
 #scroll-style::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: #f5f5f5;
+		border-radius: 10px;
+		background-color: #f5f5f5;
 }
 
 body {
-  //height: 100%;
-  overflow: scroll;
-  position: relative;
+	//height: 100%;
+	overflow: scroll;
+	position: relative;
+}
+
+.mainContent {
+	&.container-fluid {
+		padding: 0px !important;
+		overflow-x: hidden;
+	}
+}
+
+.feedWrapper {	
+	background: 
+		linear-gradient(181deg, rgba(238,238,238,0.4), rgba(0, 0, 0, 0.4)),		
+		url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Landscape-sunset-blue-sunrise_%2823958859769%29.jpg/1280px-Landscape-sunset-blue-sunrise_%2823958859769%29.jpg') center center no-repeat;
+
+	//overflow-y: scroll;
 }
